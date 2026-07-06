@@ -21,13 +21,30 @@
     </div>
     <aside class="today-panel">
       <span>오늘 기준</span>
-      <strong id="todayLabel">-</strong>
-      <p id="todaySummary">일정을 계산하고 있습니다.</p>
+      <strong id="todayLabel">2026년 7월 6일 월요일</strong>
+      <p id="todaySummary">2개 일정이 진행 중입니다.</p>
     </aside>
   </header>
 
   <main>
-    <section class="summary-grid" aria-label="학사일정 요약" id="summaryGrid"></section>
+    <section class="summary-grid" aria-label="학사일정 요약" id="summaryGrid">
+      <article class="metric-card">
+        <span>전체 일정</span>
+        <strong>10건</strong>
+      </article>
+      <article class="metric-card">
+        <span>진행 중</span>
+        <strong>2건</strong>
+      </article>
+      <article class="metric-card">
+        <span>다가오는 일정</span>
+        <strong>3건</strong>
+      </article>
+      <article class="metric-card">
+        <span>가장 긴 일정</span>
+        <strong>70일</strong>
+      </article>
+    </section>
 
     <section class="focus-layout">
       <article class="focus-card">
@@ -35,7 +52,22 @@
           <p class="eyebrow">Now</p>
           <h2>현재 챙겨야 할 일정</h2>
         </div>
-        <div id="activeList" class="active-list"></div>
+        <div id="activeList" class="active-list">
+          <article class="active-item">
+            <div>
+              <h3>하계 계절학기</h3>
+              <p class="date-range">6월 23일 화 - 7월 6일 월 · 14일간</p>
+            </div>
+            <span class="status-pill active">오늘 종료</span>
+          </article>
+          <article class="active-item">
+            <div>
+              <h3>미등록 휴학기간</h3>
+              <p class="date-range">6월 23일 화 - 8월 31일 월 · 70일간</p>
+            </div>
+            <span class="status-pill active">56일 남음</span>
+          </article>
+        </div>
       </article>
 
       <article class="focus-card compact">
@@ -43,7 +75,26 @@
           <p class="eyebrow">Next</p>
           <h2>다가오는 일정</h2>
         </div>
-        <ol id="upcomingList" class="upcoming-list"></ol>
+        <ol id="upcomingList" class="upcoming-list">
+          <li>
+            <div>
+              <strong>휴학연기 신청기간</strong>
+              <p class="date-range">7월 13일 월 - 8월 31일 월 · D-7</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>복학기간</strong>
+              <p class="date-range">7월 13일 월 - 7월 17일 금 · D-7</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>예비수강 신청기간</strong>
+              <p class="date-range">7월 29일 수 - 7월 31일 금 · D-23</p>
+            </div>
+          </li>
+        </ol>
       </article>
     </section>
 
@@ -52,7 +103,50 @@
         <p class="eyebrow">July</p>
         <h2>7월 일정 흐름</h2>
       </div>
-      <div id="monthFlow" class="month-flow"></div>
+      <div id="monthFlow" class="month-flow">
+        <article class="flow-item">
+          <div class="flow-date">6월 22일 월 - 7월 3일 금</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 18%"></div>
+            <div class="flow-label">재입학 신청기간</div>
+          </div>
+        </article>
+        <article class="flow-item">
+          <div class="flow-date">6월 23일 화 - 7월 6일 월</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 20%"></div>
+            <div class="flow-label">하계 계절학기</div>
+          </div>
+        </article>
+        <article class="flow-item">
+          <div class="flow-date">6월 23일 화 - 8월 31일 월</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 100%"></div>
+            <div class="flow-label">미등록 휴학기간</div>
+          </div>
+        </article>
+        <article class="flow-item">
+          <div class="flow-date">7월 13일 월 - 8월 31일 월</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 71%"></div>
+            <div class="flow-label">휴학연기 신청기간</div>
+          </div>
+        </article>
+        <article class="flow-item">
+          <div class="flow-date">7월 13일 월 - 7월 17일 금</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 18%"></div>
+            <div class="flow-label">복학기간</div>
+          </div>
+        </article>
+        <article class="flow-item">
+          <div class="flow-date">7월 29일 수 - 7월 31일 금</div>
+          <div class="flow-track">
+            <div class="flow-bar" style="width: 18%"></div>
+            <div class="flow-label">예비수강 신청기간</div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="dashboard-section">
@@ -68,7 +162,88 @@
           <button class="filter-button" type="button" data-filter="completed">완료</button>
         </div>
       </div>
-      <div id="timeline" class="timeline"></div>
+      <div id="timeline" class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">6월 9일 화 - 6월 15일 월</div>
+          <div class="timeline-title">
+            <strong>기말고사</strong>
+            <span>7일간 · 완료</span>
+          </div>
+          <span class="status-pill completed">완료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 16일 화 - 6월 22일 월</div>
+          <div class="timeline-title">
+            <strong>보강기간</strong>
+            <span>7일간 · 완료</span>
+          </div>
+          <span class="status-pill completed">완료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 22일 월 - 7월 3일 금</div>
+          <div class="timeline-title">
+            <strong>재입학 신청기간</strong>
+            <span>12일간 · 완료</span>
+          </div>
+          <span class="status-pill completed">완료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 23일 화 - 7월 6일 월</div>
+          <div class="timeline-title">
+            <strong>하계 계절학기</strong>
+            <span>14일간 · 진행중</span>
+          </div>
+          <span class="status-pill active">오늘 종료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 23일 화 - 8월 31일 월</div>
+          <div class="timeline-title">
+            <strong>미등록 휴학기간</strong>
+            <span>70일간 · 진행중</span>
+          </div>
+          <span class="status-pill active">진행중</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 23일 화</div>
+          <div class="timeline-title">
+            <strong>하계방학</strong>
+            <span>1일간 · 완료</span>
+          </div>
+          <span class="status-pill completed">완료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">6월 25일 목 - 6월 30일 화</div>
+          <div class="timeline-title">
+            <strong>성적공시 및 정정</strong>
+            <span>6일간 · 완료</span>
+          </div>
+          <span class="status-pill completed">완료</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">7월 13일 월 - 8월 31일 월</div>
+          <div class="timeline-title">
+            <strong>휴학연기 신청기간</strong>
+            <span>50일간 · 예정</span>
+          </div>
+          <span class="status-pill upcoming">D-7</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">7월 13일 월 - 7월 17일 금</div>
+          <div class="timeline-title">
+            <strong>복학기간</strong>
+            <span>5일간 · 예정</span>
+          </div>
+          <span class="status-pill upcoming">D-7</span>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">7월 29일 수 - 7월 31일 금</div>
+          <div class="timeline-title">
+            <strong>예비수강 신청기간</strong>
+            <span>3일간 · 예정</span>
+          </div>
+          <span class="status-pill upcoming">D-23</span>
+        </article>
+      </div>
     </section>
 
     <section class="dashboard-section source-note">
