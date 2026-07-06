@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 학사일정 대시보드 - 跆拳道 人文学堂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+  <header class="dashboard-hero">
+    <div>
+      <a class="home-link" href="index.html">跆拳道 人文学堂으로 돌아가기</a>
+      <p class="eyebrow">2026 Academic Calendar</p>
+      <h1>학사일정 대시보드</h1>
+      <p class="hero-copy">
+        스프레드시트의 시작일, 종료일, 일정명을 기준으로 현재 진행 중인 일정과 다가오는 일정을 한눈에 정리했습니다.
+      </p>
+    </div>
+    <aside class="today-panel">
+      <span>오늘 기준</span>
+      <strong id="todayLabel">-</strong>
+      <p id="todaySummary">일정을 계산하고 있습니다.</p>
+    </aside>
+  </header>
+
+  <main>
+    <section class="summary-grid" aria-label="학사일정 요약" id="summaryGrid"></section>
+
+    <section class="focus-layout">
+      <article class="focus-card">
+        <div class="section-title">
+          <p class="eyebrow">Now</p>
+          <h2>현재 챙겨야 할 일정</h2>
+        </div>
+        <div id="activeList" class="active-list"></div>
+      </article>
+
+      <article class="focus-card compact">
+        <div class="section-title">
+          <p class="eyebrow">Next</p>
+          <h2>다가오는 일정</h2>
+        </div>
+        <ol id="upcomingList" class="upcoming-list"></ol>
+      </article>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-title">
+        <p class="eyebrow">July</p>
+        <h2>7월 일정 흐름</h2>
+      </div>
+      <div id="monthFlow" class="month-flow"></div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-title with-actions">
+        <div>
+          <p class="eyebrow">Timeline</p>
+          <h2>전체 일정 타임라인</h2>
+        </div>
+        <div class="filter-group" aria-label="일정 상태 필터">
+          <button class="filter-button is-active" type="button" data-filter="all">전체</button>
+          <button class="filter-button" type="button" data-filter="active">진행중</button>
+          <button class="filter-button" type="button" data-filter="upcoming">예정</button>
+          <button class="filter-button" type="button" data-filter="completed">완료</button>
+        </div>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section class="dashboard-section source-note">
+      <h2>데이터 기준</h2>
+      <p>
+        원본 스프레드시트의 <code>start</code>, <code>end</code>, <code>title</code> 열을 사용했습니다.
+        날짜 범위는 종료일을 포함해 계산합니다.
+        <a href="https://docs.google.com/spreadsheets/d/143Sx6U4qlHvA29a3QmnWuwgo-xXqkLgd/edit?gid=1349414445#gid=1349414445" target="_blank" rel="noreferrer">원본 스프레드시트 보기</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="schedule.js"></script>
+</body>
+</html>
