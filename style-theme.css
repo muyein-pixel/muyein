@@ -131,6 +131,16 @@
   color: var(--color-primary);
 }
 
+[data-theme="dark"] .gallery-intro,
+[data-theme="dark"] .photo-card figcaption {
+  color: var(--text-sub);
+}
+
+[data-theme="dark"] .photo-card {
+  background-color: var(--bg-alt);
+  border-color: var(--border-section);
+}
+
 [data-theme="dark"] th,
 [data-theme="dark"] td {
   border-color: var(--border-light);

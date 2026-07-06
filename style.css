@@ -42,6 +42,34 @@ header p:last-child {
   font-size: 0.95rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(120px, 0.8fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #050505;
+  border: 1px solid rgba(26, 58, 92, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 18px 36px rgba(26, 58, 92, 0.16);
+}
+
+.hero-visual__main {
+  grid-row: span 2;
+}
+
 /* nav */
 nav {
   margin-bottom: 24px;
@@ -107,6 +135,47 @@ section h3 {
 
 section p {
   margin: 0 0 16px;
+}
+
+.gallery-intro {
+  color: #555;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  margin: 0;
+  overflow: hidden;
+  background-color: #f8f6f3;
+  border: 1px solid #e8e4de;
+  border-radius: 18px;
+}
+
+.photo-card--featured {
+  grid-row: span 2;
+}
+
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: #050505;
+}
+
+.photo-card figcaption {
+  padding: 16px 18px 18px;
+  color: #444;
+  font-size: 0.92rem;
+}
+
+.photo-card figcaption strong {
+  display: block;
+  margin-bottom: 6px;
 }
 
 /* table */
@@ -220,6 +289,20 @@ footer p {
 
   header h1 {
     font-size: 1.8rem;
+  }
+
+  .hero-visual,
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual img {
+    min-height: auto;
+  }
+
+  .hero-visual__main,
+  .photo-card--featured {
+    grid-row: auto;
   }
 
   nav ul {
