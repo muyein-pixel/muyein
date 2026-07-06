@@ -1,9 +1,14 @@
-# AI 활용 역량교육 연습 홈페이지
+# 跆拳道 人文学堂
 
-GitHub Pages로 배포하기 위한 정적 홈페이지입니다.
+태권도와 무예 인문학 연구를 소개하는 정적 홈페이지입니다.
 
 ## 구성
 
 - `index.html`: 홈페이지 구조
-- `styles.css`: 반응형 스타일
-- `.nojekyll`: GitHub Pages 정적 파일 처리 설정
+- `style.css`: 기본 스타일
+- `style-emphasis.css`: 섹션 강조 스타일
+- `style-theme.css`: 라이트/다크 모드 스타일
+- `style-top.css`: 맨 위로 이동 버튼 스타일
+- `style-script-v8.css`: 서체 스타일
+- `theme.js`: 테마 전환
+- `top.js`: 맨 위로 이동 버튼 생성

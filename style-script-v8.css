@@ -1,0 +1,64 @@
+/* v8 — Ma Shan Zheng (马善政): Long Cang보다 굵고 장대한 행서체 */
+.script-font,
+header h1,
+.site-name-script,
+.script-text,
+.script-name {
+  font-family: 'Ma Shan Zheng', 'Long Cang', cursive;
+  font-weight: 400;
+}
+
+header h1 {
+  font-size: 3.4rem;
+  letter-spacing: 0.06em;
+  color: #122440;
+  text-shadow: 1px 2px 3px rgba(26, 58, 92, 0.1);
+}
+
+.site-name-script {
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+.script-text {
+  font-size: 1.05em;
+  letter-spacing: 0.04em;
+}
+
+.script-name {
+  letter-spacing: 0.08em;
+}
+
+header p .script-text,
+header p .script-name {
+  font-size: 1.15em;
+}
+
+blockquote .script-name {
+  font-size: 1.1em;
+}
+
+footer .script-name {
+  font-size: 1.05em;
+}
+
+[data-theme="dark"] header h1 {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] header h1,
+[data-theme="dark"] .site-name-script {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0.04em;
+  }
+
+  header p .script-text,
+  header p .script-name {
+    font-size: 1.05em;
+  }
+}

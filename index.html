@@ -1,87 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI 활용 역량교육 연습 홈페이지</title>
-    <meta
-      name="description"
-      content="AI 활용 역량교육 연습 내용을 소개하는 개인 홈페이지입니다."
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="logo" href="#top">AI Practice</a>
-      <nav aria-label="주요 메뉴">
-        <a href="#about">소개</a>
-        <a href="#works">작업물</a>
-        <a href="#contact">문의</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跆拳道 人文学堂 - 道軒 곽정현</title>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Long+Cang&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-emphasis.css">
+  <link rel="stylesheet" href="style-theme.css">
+  <link rel="stylesheet" href="style-top.css">
+  <link rel="stylesheet" href="style-script-v8.css">
+</head>
+<body>
 
-    <main id="top">
-      <section class="hero">
-        <p class="eyebrow">AI 활용 역량교육 연습</p>
-        <h1>배우고 만든 결과를 한눈에 보여주는 홈페이지</h1>
-        <p class="hero-copy">
-          웹페이지 제작, 이미지 활용, 간단한 인터랙션 연습을 정리하고 공유하기 위한
-          공간입니다.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#works">작업물 보기</a>
-          <a class="button secondary" href="https://github.com/muyein-pixel/muyein">GitHub 보기</a>
-        </div>
-      </section>
+  <button type="button" id="theme-toggle" class="theme-toggle" aria-label="다크 모드로 전환">🌙 다크 모드</button>
 
-      <section class="section" id="about">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>학습 과정을 기록합니다</h2>
-        </div>
+  <header id="top">
+    <h1 aria-label="跆拳道 人文學堂">跆拳道 人文学堂</h1>
+    <p>안녕하세요. 태권도와 무예를 사랑하는 인문학자, <span class="script-name" aria-label="道軒">道轩</span> 곽정현입니다.</p>
+    <p>가천대학교 · 인문학 · 무예 연구</p>
+  </header>
+
+  <nav>
+    <h2>목차</h2>
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">관심 분야</a></li>
+      <li><a href="#career">경력</a></li>
+      <li><a href="#research">연구활동</a></li>
+      <li><a href="#students">학생 소통</a></li>
+      <li><a href="#contact">연락처</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <main>
+
+    <section id="about">
+      <h2>소개</h2>
+      <p>
+        저는 태권도와 무예를 깊이 사랑하는 인문학자 <span class="script-name" aria-label="道軒">道轩</span> 곽정현입니다.
+        몸으로 익히는 수련과 마음으로 탐구하는 학문, 두 길을 함께 걸어가고 있습니다.
+      </p>
+      <p>
+        현재 가천대학교에서 학생들을 지도하며, 배움의 자리에서 함께 성장하는 시간을 보내고 있습니다.
+      </p>
+      <p>
+        <strong>꿈:</strong> 태권도를 포함한 무예가 인문학적 관점에서 더 깊이 이해되고 발전하는 것
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>관심 분야</h2>
+      <ul>
+        <li>태권도</li>
+        <li>무예(武藝)의 역사와 철학</li>
+        <li>인문학</li>
+        <li>무예의 인문학적 연구와 발전</li>
+        <li>대학 교육 및 학생 지도</li>
+      </ul>
+    </section>
+
+    <section id="career">
+      <h2>경력</h2>
+      <p>태권도·무예와 인문학을 연결하는 학문·교육 활동을 이어오고 있습니다.</p>
+
+      <table>
+        <tr>
+          <th>기간</th>
+          <th>소속</th>
+          <th>직책 · 활동</th>
+        </tr>
+        <tr>
+          <td>현재</td>
+          <td>가천대학교</td>
+          <td>인문학 분야 교수 · 학생 지도</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>—</td>
+          <td>무예·인문학 융합 강의 및 세미나 진행</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>—</td>
+          <td>태권도·무예 문화에 관한 연구 및 학술 활동</td>
+        </tr>
+      </table>
+
+      <h3>학력</h3>
+      <ul>
+        <li>인문학 관련 학위 취득 (세부 사항 추후 기재)</li>
+      </ul>
+
+      <h3>주요 활동</h3>
+      <ul>
+        <li>대학 강의: 무예와 인문학, 태권도 문화론 등</li>
+        <li>학생 논문·연구 지도</li>
+        <li>무예 인문학 관련 학술대회 참여</li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>연구활동</h2>
+      <p>태권도와 무예를 인문학적 시각에서 탐구한 연구 자료입니다.</p>
+
+      <h3>연구 주제</h3>
+      <ul>
+        <li>태권도의 역사와 문화적 의미</li>
+        <li>무예(武藝)의 철학적·사회적 이해</li>
+        <li>무예 교육과 인문학적 소양</li>
+        <li>한국 무예 문화의 현대적 계승</li>
+      </ul>
+
+      <h3>논문 · 발표</h3>
+      <table>
+        <tr>
+          <th>연도</th>
+          <th>제목</th>
+          <th>형태</th>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>태권도의 인문학적 해석에 관한 연구</td>
+          <td>학술논문 (추후 기재)</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>무예 수련과 인문학적 자기 형성</td>
+          <td>학회 발표 (추후 기재)</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>한국 무예 문화의 전통과 현대</td>
+          <td>학술논문 (추후 기재)</td>
+        </tr>
+      </table>
+
+      <h3>저서</h3>
+      <p>태권도·무예와 인문학을 다룬 집필 및 편저 도서입니다.</p>
+      <table>
+        <tr>
+          <th>연도</th>
+          <th>저서명</th>
+          <th>출판사</th>
+          <th>역할</th>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>태권도와 인문학</td>
+          <td>(출판사 추후 기재)</td>
+          <td>단독 저</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>무예, 몸과 마음의 철학</td>
+          <td>(출판사 추후 기재)</td>
+          <td>단독 저</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>동아시아 무예 문화의 이해</td>
+          <td>(출판사 추후 기재)</td>
+          <td>공저</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>대학 무예 교육론</td>
+          <td>(출판사 추후 기재)</td>
+          <td>편저</td>
+        </tr>
+      </table>
+
+      <h3>연구 자료</h3>
+      <ul>
+        <li>
+          <strong>연구 노트 1:</strong> 태권도 품새에 담긴 문화적 상징
+          — <em>(자료 파일명 또는 링크 추후 추가)</em>
+        </li>
+        <li>
+          <strong>연구 노트 2:</strong> 무예 경전과 동아시아 사상
+          — <em>(자료 파일명 또는 링크 추후 추가)</em>
+        </li>
+        <li>
+          <strong>연구 노트 3:</strong> 대학 무예 교육의 인문학적 접근
+          — <em>(자료 파일명 또는 링크 추후 추가)</em>
+        </li>
+      </ul>
+
+      <h3>진행 중인 연구</h3>
+      <ul>
+        <li>무예의 인문학적 발전을 위한 교육 모델 연구</li>
+        <li>태권도 문화 유산의 학문적 정리</li>
+      </ul>
+    </section>
+
+    <section id="students">
+      <h2>학생들과의 소통</h2>
+      <p>
+        수업, 연구, 진로에 관한 이야기를 나누는 공간입니다.
+        궁금한 점이 있으면 편하게 연락해 주세요.
+      </p>
+
+      <h3>상담 안내</h3>
+      <table>
+        <tr>
+          <th>항목</th>
+          <th>내용</th>
+        </tr>
+        <tr>
+          <td>대상</td>
+          <td>수강 학생, 연구 지도 학생</td>
+        </tr>
+        <tr>
+          <td>상담 시간</td>
+          <td>수요일 14:00 ~ 16:00 (학기 중, 변경 시 공지)</td>
+        </tr>
+        <tr>
+          <td>장소</td>
+          <td>교수 연구실 (호실 번호 추후 기재)</td>
+        </tr>
+        <tr>
+          <td>연락</td>
+          <td><a href="mailto:muyein@gachon.ac.kr">muyein@gachon.ac.kr</a></td>
+        </tr>
+      </table>
+
+      <h3>공지사항</h3>
+      <ul>
+        <li><strong>[공지]</strong> 2026학년도 1학기 상담 시간 안내 — 수요일 오후</li>
+        <li><strong>[공지]</strong> 무예·인문학 세미나 참여 학생 모집 — 이메일 문의</li>
+        <li><strong>[공지]</strong> 연구 지도 희망 학생은 사전에 이메일로 연락 바랍니다.</li>
+      </ul>
+
+      <h3>자주 묻는 질문</h3>
+      <dl>
+        <dt>수업 관련 질문은 어디로 하면 되나요?</dt>
+        <dd>수업 시간에 질문하시거나, 이메일로 보내 주세요. 제목에 [수업]을 적어 주시면 확인이 빠릅니다.</dd>
+
+        <dt>연구 지도를 받을 수 있나요?</dt>
+        <dd>무예·인문학 관련 주제에 관심 있는 학생은 상담 시간에 방문하거나 이메일로 연락해 주세요.</dd>
+
+        <dt>과제·논문 자료는 어디서 확인하나요?</dt>
+        <dd>강의 자료는 수업 안내에 따라 배부되며, 연구 자료는 위 <a href="#research">연구활동</a> 섹션에서 확인할 수 있습니다.</dd>
+      </dl>
+
+      <h3>학생에게 전하는 말</h3>
+      <blockquote>
         <p>
-          수업에서 실습한 내용을 바탕으로 화면 구성, 색상, 레이아웃, 반응형 디자인을
-          연습했습니다. 앞으로 만든 예제와 프로젝트를 이 페이지에 계속 정리할 수 있습니다.
+          무예는 몸의 수련이자, 마음과 생각을 기르는 길입니다.
+          함께 배우고, 질문하고, 연구하며 성장해 나가길 바랍니다.
         </p>
-      </section>
+        <p>— <span class="script-name" aria-label="道軒">道轩</span></p>
+      </blockquote>
+    </section>
 
-      <section class="section works" id="works">
-        <div>
-          <p class="eyebrow">Works</p>
-          <h2>연습 작업물</h2>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <span>01</span>
-            <h3>홈페이지 레이아웃</h3>
-            <p>헤더, 소개 영역, 카드 구성을 사용한 기본 홈페이지입니다.</p>
-          </article>
-          <article class="card">
-            <span>02</span>
-            <h3>이미지 피드 UI</h3>
-            <p>소셜 미디어 화면을 참고해 목록형 콘텐츠 배치를 연습했습니다.</p>
-          </article>
-          <article class="card">
-            <span>03</span>
-            <h3>반응형 화면</h3>
-            <p>PC와 모바일에서 자연스럽게 보이도록 CSS를 구성했습니다.</p>
-          </article>
-        </div>
-      </section>
+    <section id="contact">
+      <h2>연락처</h2>
+      <p>무예, 인문학, 교육에 관해 이야기 나누고 싶으시면 연락해 주세요.</p>
+      <ul>
+        <li>이름: 곽정현</li>
+        <li>호(号): <span class="script-name" aria-label="道軒">道轩</span></li>
+        <li>소속: 가천대학교</li>
+        <li>이메일: <a href="mailto:muyein@gachon.ac.kr">muyein@gachon.ac.kr</a></li>
+      </ul>
+    </section>
 
-      <section class="section contact" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>계속 업데이트할 수 있어요</h2>
-        </div>
-        <p>
-          새로 만든 작업물이 생기면 카드와 설명을 추가해서 포트폴리오처럼 확장할 수 있습니다.
-        </p>
-      </section>
-    </main>
+  </main>
 
-    <footer>
-      <p>© 2026 AI Practice. Published with GitHub Pages.</p>
-    </footer>
-  </body>
+  <hr>
+
+  <footer>
+    <p><small>마지막 수정: 2026년 7월 2일</small></p>
+    <p><small>&copy; 2026 <span class="site-name-script" aria-label="跆拳道 人文學堂">跆拳道 人文学堂</span> · <span class="script-name" aria-label="道軒">道轩</span> 곽정현. All rights reserved.</small></p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="top.js"></script>
+</body>
 </html>

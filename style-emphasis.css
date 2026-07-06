@@ -1,0 +1,86 @@
+/* 섹션 제목 강조 스타일 (style.css 위에 덮어씀) */
+
+main section {
+  padding: 28px 32px 36px;
+  background-color: #fff;
+  border: 1px solid #e8e4de;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(26, 58, 92, 0.06);
+}
+
+main section h2 {
+  margin: -28px -32px 28px;
+  padding: 18px 32px;
+  background-color: #1a3a5c;
+  color: #fff;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-bottom: none;
+  border-left: 6px solid #8b4513;
+  border-radius: 4px 4px 0 0;
+}
+
+main section h3 {
+  margin: 32px 0 14px;
+  padding: 10px 16px;
+  background-color: #f0ede8;
+  border-left: 4px solid #8b4513;
+  color: #1a3a5c;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+main section h3:first-of-type {
+  margin-top: 0;
+}
+
+/* 목차 nav 링크도 강조 */
+nav ul li a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #1a3a5c;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #1a3a5c;
+  color: #fff;
+  border-color: #1a3a5c;
+  border-bottom-color: #1a3a5c;
+  text-decoration: none;
+}
+
+nav h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  letter-spacing: 0.05em;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  main section {
+    padding: 20px 20px 28px;
+  }
+
+  main section h2 {
+    margin: -20px -20px 20px;
+    padding: 14px 20px;
+    font-size: 1.35rem;
+    letter-spacing: 0.05em;
+  }
+
+  main section h3 {
+    padding: 8px 12px;
+    font-size: 1.05rem;
+  }
+
+  nav ul li a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

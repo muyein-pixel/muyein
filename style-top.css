@@ -1,0 +1,121 @@
+/* 대제목(h2) + 맨 위로 버튼 */
+main section h2.section-heading-with-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+main section h2.section-heading-with-top span {
+  flex: 1;
+}
+
+.to-top-btn--section {
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.to-top-btn--section:hover {
+  background-color: #fff;
+  color: #1a3a5c;
+  border-color: #fff;
+}
+
+[data-theme="dark"] .to-top-btn--section {
+  background-color: rgba(28, 28, 30, 0.3);
+  color: #1c1c1e;
+  border-color: rgba(28, 28, 30, 0.5);
+}
+
+[data-theme="dark"] .to-top-btn--section:hover {
+  background-color: #1c1c1e;
+  color: var(--color-primary);
+  border-color: #1c1c1e;
+}
+
+/* 소제목(h3) + 맨 위로 버튼 */
+.subheading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 32px 0 14px;
+  padding: 10px 16px;
+  background-color: #f0ede8;
+  border-left: 4px solid #8b4513;
+  border-radius: 0 4px 4px 0;
+}
+
+.subheading-wrap:first-of-type {
+  margin-top: 0;
+}
+
+.subheading-wrap h3 {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #1a3a5c;
+  font-size: 1.15rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.to-top-btn {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #1a3a5c;
+  border: 1px solid #1a3a5c;
+  border-radius: 4px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.to-top-btn:hover {
+  background-color: #1a3a5c;
+  color: #fff;
+  text-decoration: none;
+}
+
+[data-theme="dark"] .subheading-wrap {
+  background-color: var(--bg-alt);
+  border-left-color: var(--color-accent);
+}
+
+[data-theme="dark"] .subheading-wrap h3 {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .to-top-btn {
+  background-color: var(--bg-card);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .to-top-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--bg-body);
+}
+
+@media (max-width: 768px) {
+  .subheading-wrap {
+    margin: 24px 0 12px;
+    padding: 8px 12px;
+  }
+
+  .subheading-wrap h3 {
+    font-size: 1.05rem;
+  }
+
+  .to-top-btn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+}

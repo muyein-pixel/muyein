@@ -1,0 +1,193 @@
+/* 테마 토글 버튼 */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 10px 18px;
+  background-color: var(--toggle-bg);
+  color: var(--toggle-text);
+  border: 2px solid var(--toggle-border);
+  border-radius: 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--toggle-hover-bg);
+  color: var(--toggle-hover-text);
+}
+
+/* 라이트 모드 (기본) */
+:root {
+  --bg-body: #f8f6f3;
+  --text-body: #2c2c2c;
+  --text-muted: #666;
+  --text-sub: #444;
+  --text-footer: #888;
+  --color-primary: #1a3a5c;
+  --color-accent: #8b4513;
+  --border-light: #ddd;
+  --border-section: #e8e4de;
+  --bg-card: #fff;
+  --bg-alt: #f0ede8;
+  --bg-table-even: #fff;
+  --bg-table-odd: #f0ede8;
+  --shadow-card: rgba(26, 58, 92, 0.06);
+  --toggle-bg: #fff;
+  --toggle-text: #1a3a5c;
+  --toggle-border: #1a3a5c;
+  --toggle-hover-bg: #1a3a5c;
+  --toggle-hover-text: #fff;
+}
+
+/* 다크 모드 */
+[data-theme="dark"] {
+  --bg-body: #1c1c1e;
+  --text-body: #e8e6e3;
+  --text-muted: #a0a0a0;
+  --text-sub: #c8c6c3;
+  --text-footer: #888;
+  --color-primary: #6ba3d6;
+  --color-accent: #d4a574;
+  --border-light: #3a3a3c;
+  --border-section: #3a3a3c;
+  --bg-card: #2c2c2e;
+  --bg-alt: #3a3a3c;
+  --bg-table-even: #2c2c2e;
+  --bg-table-odd: #363638;
+  --shadow-card: rgba(0, 0, 0, 0.3);
+  --toggle-bg: #2c2c2e;
+  --toggle-text: #e8e6e3;
+  --toggle-border: #6ba3d6;
+  --toggle-hover-bg: #6ba3d6;
+  --toggle-hover-text: #1c1c1e;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--bg-body);
+  color: var(--text-body);
+}
+
+[data-theme="dark"] header {
+  border-bottom-color: var(--color-primary);
+}
+
+[data-theme="dark"] header h1 {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] header p:last-child {
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] nav h2 {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] nav ul li a {
+  background-color: var(--bg-card);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] nav ul li a:hover {
+  background-color: var(--color-primary);
+  color: var(--bg-body);
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] hr {
+  border-top-color: var(--border-light);
+}
+
+[data-theme="dark"] section h2 {
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] section h3 {
+  color: var(--text-body);
+}
+
+[data-theme="dark"] main section {
+  background-color: var(--bg-card);
+  border-color: var(--border-section);
+  box-shadow: 0 2px 8px var(--shadow-card);
+}
+
+[data-theme="dark"] main section h2 {
+  background-color: var(--color-primary);
+  color: #1c1c1e;
+  border-left-color: var(--color-accent);
+}
+
+[data-theme="dark"] main section h3 {
+  background-color: var(--bg-alt);
+  border-left-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  border-color: var(--border-light);
+}
+
+[data-theme="dark"] th {
+  background-color: var(--color-primary);
+  color: #1c1c1e;
+}
+
+[data-theme="dark"] tr:nth-child(even) {
+  background-color: var(--bg-table-even);
+}
+
+[data-theme="dark"] tr:nth-child(odd) {
+  background-color: var(--bg-table-odd);
+}
+
+[data-theme="dark"] dt {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] dd {
+  color: var(--text-sub);
+}
+
+[data-theme="dark"] blockquote {
+  background-color: var(--bg-alt);
+  border-left-color: var(--color-accent);
+}
+
+[data-theme="dark"] blockquote p {
+  color: var(--text-sub);
+}
+
+[data-theme="dark"] a {
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] a:hover {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] strong {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] footer {
+  border-top-color: var(--border-light);
+  color: var(--text-footer);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}
